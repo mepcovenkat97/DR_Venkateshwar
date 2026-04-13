@@ -47,7 +47,3 @@ cd slideshow
 npm install
 npm run dev
 ```
-
-## Resume
-
-Replace `public/Venkateshwar_Resume.pdf` with the actual resume file.
