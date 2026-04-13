@@ -1,0 +1,23 @@
+name: Deploy Portfolio
+on:
+  push:
+    branches: [main]
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install and Build
+        run: |
+          npm install
+          npm run build
+          # If Slidev is a separate command, run it here:
+          # npx slidev build --out dist/slideshow 
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: dist # The folder your build script generates
+          branch: gh-pages
