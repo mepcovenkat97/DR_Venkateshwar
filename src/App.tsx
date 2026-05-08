@@ -32,7 +32,8 @@ export default function App() {
         <main className="pt-16">
           <Suspense fallback={<LoadingFallback />}>
             <Routes>
-              <Route path="/" element={<Home />} />
+              {/* <Route path="/" element={<Home />} /> */}
+              <Route path="/DR_Venkateshwar" element={<Home />} />
               <Route path="/slideshow" element={<Slideshow />} />
             </Routes>
           </Suspense>
