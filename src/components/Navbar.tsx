@@ -4,7 +4,7 @@ import { useState } from "react";
 import ThemeToggle from "./ThemeToggle";
 
 const NAV_LINKS = [
-  { to: "/", label: "Home" },
+  { to: "/DR_Venkateshwar", label: "Home" },
   { to: "/slideshow", label: "About Me" },
 ];
 
@@ -16,7 +16,7 @@ export default function Navbar() {
     <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-white/80 dark:bg-gray-950/80 border-b border-gray-200 dark:border-gray-800 safe-top">
       <nav className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 h-14 sm:h-16 flex items-center justify-between">
         <Link
-          to="/"
+          to="/DR_Venkateshwar"
           className="font-mono font-semibold text-lg tracking-tight hover:text-accent transition-colors"
         >
           <span className="text-accent">&lt;</span>
@@ -39,7 +39,7 @@ export default function Navbar() {
             </Link>
           ))}
           <a
-            href="/Venkateshwar_Resume.pdf"
+            href="https://mepcovenkat97.github.io/DR_Venkateshwar/Venkateshwar_Resume.pdf"
             download
             className="inline-flex items-center gap-2 text-sm font-medium px-4 py-2 rounded-lg bg-accent text-white hover:bg-accent-dark transition-colors"
           >
